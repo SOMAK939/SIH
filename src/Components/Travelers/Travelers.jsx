@@ -47,25 +47,23 @@ const Travelers = () => {
         <h2>Top Travelers this month!</h2>
 
         <div className="travelersContainer grid">
-          {
-            travelers.map(({ id, destinationImage, travelerImg, travelerName, socialLink }) => {
-              return (
-                // Single Passenger Card
-                <div key={id} className="singleTraveler">
-                  <img src={destinationImage} alt="destinationImage" className='destinationImage' />
-                  <div className="travelerDetails">
-                    <div className="travelerPicture">
-                      <img src={travelerImg} alt="travelerImage" className='travelerImage' />
-                    </div>
-                    <div className="travelerName">
-                      <span>{travelerName}</span>
-                      <p>{socialLink}</p>
-                    </div>
+          {travelers.map(({ id, destinationImage, travelerImg, travelerName, socialLink }) => {
+            return (
+              // Single Passenger Card
+              <div key={id} className="singleTraveler">
+                <img src={destinationImage} alt="destinationImage" className='destinationImage' />
+                <div className="travelerDetails">
+                  <div className="travelerPicture">
+                    <img src={travelerImg} alt="travelerImage" className='travelerImage' />
+                  </div>
+                  <div className="travelerName">
+                    <span>{travelerName}</span>
+                    <p>{socialLink}</p>
                   </div>
                 </div>
-              )
-            })
-          }
+              </div>
+            )
+          })}
 
         </div>
       </div>
