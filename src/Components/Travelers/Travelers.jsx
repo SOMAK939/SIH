@@ -8,6 +8,10 @@ import india from "../../assets/india.jpg";
 import dubai from "../../assets/dubai.jpg";
 import travelerImg from "../../assets/travelerImg.png";
 
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
 // Using Map method to display all data at once.
 const travelers = [
   {
@@ -41,12 +45,17 @@ const travelers = [
 ]
 
 const Travelers = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <div className='travelers container section'>
       <div className="sectionContainer">
         <h2>Top Travelers this month!</h2>
 
-        <div className="travelersContainer grid">
+        <div className="travelersContainer grid" data-aos='fade-down' data-aos-duration='2500'>
           {travelers.map(({ id, destinationImage, travelerImg, travelerName, socialLink }) => {
             return (
               // Single Passenger Card
