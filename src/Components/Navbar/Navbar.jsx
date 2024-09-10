@@ -47,9 +47,6 @@ const Navbar = () => {
           <ul className="menu flex">
             <li onClick={removeNavbar} className="listItem">Home</li>
             <li onClick={removeNavbar} className="listItem">About</li>
-            <li onClick={removeNavbar} className="listItem">Offers</li>
-            <li onClick={removeNavbar} className="listItem">Seats</li>
-            <li onClick={removeNavbar} className="listItem">Destinations</li>
           </ul>
 
           <button onClick={removeNavbar} className='btn flex btnOne'>Contact</button>
