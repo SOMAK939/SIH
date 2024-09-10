@@ -62,7 +62,7 @@ const travelers = [
     destinationImage: Vishu,
     vitian: vitian,
     travelerName: 'Vishwajeet',
-    travelerName:"UI/UX Designer"
+    socialLink:"UI/UX Designer"
    
   },
 ]
