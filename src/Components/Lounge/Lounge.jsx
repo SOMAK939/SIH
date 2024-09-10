@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Lounge.scss";
-import Grid2 from "../../assets/grid2.png";
+import Grid2 from "../../assets/collage.png";
 
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -21,42 +21,42 @@ const Lounge = () => {
         </div>
 
         <div className="textDiv" data-aos='fade-left' data-aos-duration='2500'>
-          <h2>Unaccompanied Minor Lounge</h2>
+          <h2>Customer Segments</h2>
 
           <div className="grids grid">
             <div className="singleGrid">
               <span className='gridTitle'>
-                Help through the airport.
+              Healthcare Providers
               </span>
               <p>
-                You can also call airlines from your phone and book a flight ticket!
+              Revolutionize brain health with our precise fNIRS device.
               </p>
             </div>
 
             <div className="singleGrid">
               <span className='gridTitle'>
-                Priority Boarding.
+              Psychology Researchers
               </span>
               <p>
-                You can also call airlines from your phone and book a flight ticket!
+              Get clear, real-time brain data for your research
               </p>
             </div>
 
             <div className="singleGrid">
               <span className='gridTitle'>
-                Care on the flight.
+              Educational Institutions
               </span>
               <p>
-                You can also call airlines from your phone and book a flight ticket!
+              Bring advanced brain imaging to your campus
               </p>
             </div>
 
             <div className="singleGrid">
               <span className='gridTitle'>
-                Chauffer-drive service.
+              Wellness Centers 
               </span>
               <p>
-                You can also call airlines from your phone and book a flight ticket!
+              Enhance wellness programs with detailed brain insights
               </p>
             </div>
 

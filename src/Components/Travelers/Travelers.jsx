@@ -2,11 +2,13 @@ import React from 'react';
 import "./Travelers.scss";
 
 // Import images
-import paris from "../../assets/paris.jpg";
-import newyork from "../../assets/newyork.jpg";
-import india from "../../assets/india.jpg";
-import dubai from "../../assets/dubai.jpg";
-import travelerImg from "../../assets/travelerImg.png";
+import Sagnik from "../../assets/sagnik.jpg";
+import Somak from "../../assets/somak.jpg";
+import Rajangshu from "../../assets/rajangshu.jpg";
+import Hriddhi from "../../assets/hriddhi.png";
+import Soumyajeet from "../../assets/soumyajeet.jpg";
+import Vishu from "../../assets/vishu.jpg";
+import vitian from "../../assets/vitlogo.png";
 
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -16,31 +18,52 @@ import { useEffect } from 'react';
 const travelers = [
   {
     id: 1,
-    destinationImage: paris,
-    travelerImg: travelerImg,
-    travelerName: 'Mrinmoy',
-    socialLink: '@mrinnnmoy',
+    destinationImage: Somak,
+    vitian: vitian,
+    travelerName: 'Somak',
+    socialLink:'Frontend/Backend Developer'
+    
   },
   {
     id: 2,
-    destinationImage: newyork,
-    travelerImg: travelerImg,
-    travelerName: 'Mrinmoy',
-    socialLink: '@mrinnnmoy',
+    destinationImage:Soumyajeet,
+    vitian: vitian,
+    travelerName: 'Soumyajit',
+    socialLink:'Product Developer'
+    
   },
+  
   {
     id: 3,
-    destinationImage: india,
-    travelerImg: travelerImg,
-    travelerName: 'Mrinmoy',
-    socialLink: '@mrinnnmoy',
+    destinationImage: Hriddhi,
+    vitian: vitian,
+    travelerName: 'Hriddhi',
+     socialLink:'Product Developer'
+   
   },
   {
     id: 4,
-    destinationImage: dubai,
-    travelerImg: travelerImg,
-    travelerName: 'Mrinmoy',
-    socialLink: '@mrinnnmoy',
+    destinationImage:Sagnik,
+    vitian: vitian,
+    travelerName: 'Sagnik',
+    socialLink:"Product Developer"
+   
+  },
+  {
+    id: 5,
+    destinationImage: Rajangshu,
+    vitian: vitian,
+    travelerName: 'Rajangshu',
+    socialLink:"UI/UX Designer"
+    
+  },
+  {
+    id: 6,
+    destinationImage: Vishu,
+    vitian: vitian,
+    travelerName: 'Vishwajeet',
+    travelerName:"UI/UX Designer"
+   
   },
 ]
 
@@ -53,17 +76,17 @@ const Travelers = () => {
   return (
     <div className='travelers container section'>
       <div className="sectionContainer">
-        <h2>Top Travelers this month!</h2>
+        <h2>Our Team!</h2>
 
         <div className="travelersContainer grid" data-aos='fade-down' data-aos-duration='2500'>
-          {travelers.map(({ id, destinationImage, travelerImg, travelerName, socialLink }) => {
+          {travelers.map(({ id, destinationImage, vitian, travelerName, socialLink }) => {
             return (
               // Single Passenger Card
               <div key={id} className="singleTraveler">
                 <img src={destinationImage} alt="destinationImage" className='destinationImage' />
                 <div className="travelerDetails">
                   <div className="travelerPicture">
-                    <img src={travelerImg} alt="travelerImage" className='travelerImage' />
+                    <img src={vitian} alt="travelerImage" className='travelerImage' />
                   </div>
                   <div className="travelerName">
                     <span>{travelerName}</span>

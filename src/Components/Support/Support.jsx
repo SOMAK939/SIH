@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Support.scss";
-import gridImage from "../../assets/gridImage.png";
+import gridImage from "../../assets/fnirs.png";
 
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -18,9 +18,9 @@ const Support = () => {
       <div className="sectionContainer">
 
         <div className="titlesDiv">
-          <small>travel support</small>
-          <h2>Plan your travel with confidence</h2>
-          <p>Find help with booking and travel plans, see what to expect along the journey!</p>
+          <small>product support</small>
+          <h2>Key Features & Novelty</h2>
+          <p>Why should you choose our product?</p>
         </div>
 
         <div className="infoDiv grid">
@@ -29,20 +29,20 @@ const Support = () => {
 
             <div className="singleInfo" data-aos='fade-down' data-aos-duration='2500'>
               <span className='number'>01</span>
-              <h4>Travel requirements for India</h4>
-              <p>Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!</p>
+              <h4>Low-cost and portable design using accessible components. </h4>
+              <p></p>
             </div>
 
             <div className="singleInfo" data-aos='fade-down' data-aos-duration='3500'>
               <span className='number colorOne'>02</span>
-              <h4>Chauffer services at your arrival</h4>
-              <p>Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!</p>
+              <h4>Soft & lightweight materials for comfort.</h4>
+              <p></p>
             </div>
 
             <div className="singleInfo" data-aos='fade-down' data-aos-duration='4500'>
               <span className='number colorTwo'>03</span>
-              <h4>Multi-risk travel insurance</h4>
-              <p>Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!</p>
+              <h4>Wireless data transmission for real-time analysis.</h4>
+              <p></p>
             </div>
 
           </div>
